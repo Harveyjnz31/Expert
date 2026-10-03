@@ -194,6 +194,7 @@ body.loaded .hero-title .li{transform:translateY(0)}
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
 .g-item{position:relative;aspect-ratio:4/3;border-radius:6px;overflow:hidden;border:1px solid rgba(244,239,232,.08)}
 .g-ph{position:absolute;inset:0;transition:transform .8s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
+img.g-ph{width:100%;height:100%;object-fit:cover}
 .g-item:hover .g-ph{transform:scale(1.12)}
 .g-ph svg{width:54px;height:54px;stroke:rgba(11,12,16,.55);fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
 .g-ph .ph-tag{font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(11,12,16,.6);border:1px solid rgba(11,12,16,.35);padding:6px 14px;border-radius:20px;background:rgba(244,239,232,.25)}
@@ -464,47 +465,28 @@ footer{border-top:1px solid rgba(200,145,90,.14);padding:64px 6vw 40px;position:
       <p>Una muestra de lo que podemos crear para ti. Cada espacio, una historia distinta.</p>
     </div>
     <div class="gallery-grid">
-      <!-- Para usar fotos reales: reemplaza el div.g-ph por <img class="g-ph" src="tu-foto.jpg" alt="..."> -->
       <article class="g-item reveal" style="--rd:.05s">
-        <div class="g-ph" style="background:linear-gradient(135deg,#8a5a2b,#c8915a 55%,#e8c193)">
-          <svg viewBox="0 0 24 24"><path d="M3 10h18M3 10v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-9M5 10V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M12 4v6"/></svg>
-          <span class="ph-tag">Espacio para foto</span>
-        </div>
+        <img class="g-ph" src="Cocina integral.jpg" alt="Cocina integral fabricada a medida por EXPERT MOBILIARIOS">
         <div class="g-info"><span>Cocinas</span><h3>Cocina integral</h3></div>
       </article>
       <article class="g-item reveal" style="--rd:.15s">
-        <div class="g-ph" style="background:linear-gradient(160deg,#e8c193,#c8915a 50%,#8a5a2b)">
-          <svg viewBox="0 0 24 24"><path d="M4 3h16v18H4zM12 3v18M8 8h.01M16 8h.01"/></svg>
-          <span class="ph-tag">Espacio para foto</span>
-        </div>
+        <img class="g-ph" src="Closet.jpg" alt="Closet a medida con acabados en madera">
         <div class="g-info"><span>Closets</span><h3>Closet</h3></div>
       </article>
       <article class="g-item reveal" style="--rd:.25s">
-        <div class="g-ph" style="background:linear-gradient(120deg,#6e4520,#8a5a2b 45%,#c8915a)">
-          <svg viewBox="0 0 24 24"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-3zM6 12V6a2 2 0 0 1 4 0"/></svg>
-          <span class="ph-tag">Espacio para foto</span>
-        </div>
+        <img class="g-ph" src="Baño.jpg" alt="Mueble de baño moderno fabricado a medida">
         <div class="g-info"><span>Baño</span><h3>Mueble de baño</h3></div>
       </article>
       <article class="g-item reveal" style="--rd:.05s">
-        <div class="g-ph" style="background:linear-gradient(145deg,#c8915a,#8a5a2b 60%,#5c3a1a)">
-          <svg viewBox="0 0 24 24"><path d="M3 8h18v9H3zM3 17v3M21 17v3M8 8V5h8v3"/></svg>
-          <span class="ph-tag">Espacio para foto</span>
-        </div>
+        <img class="g-ph" src="Oficina.jpg" alt="Mobiliario de oficina en casa fabricado a medida">
         <div class="g-info"><span>Oficina</span><h3>Oficina en casa</h3></div>
       </article>
       <article class="g-item reveal" style="--rd:.15s">
-        <div class="g-ph" style="background:linear-gradient(170deg,#e8c193,#b07a44 55%,#8a5a2b)">
-          <svg viewBox="0 0 24 24"><path d="M3 5h18v11H3zM8 20h8M12 16v4"/></svg>
-          <span class="ph-tag">Espacio para foto</span>
-        </div>
+        <img class="g-ph" src="Centro de entretenimiento.jpg" alt="Centro de entretenimiento con diseño a medida">
         <div class="g-info"><span>Sala</span><h3>Centro de entretenimiento</h3></div>
       </article>
       <article class="g-item reveal" style="--rd:.25s">
-        <div class="g-ph" style="background:linear-gradient(110deg,#8a5a2b,#c8915a 40%,#9c6a35 80%)">
-          <svg viewBox="0 0 24 24"><path d="M4 3h16v18H4zM4 9h16M4 15h16M9 3v18"/></svg>
-          <span class="ph-tag">Espacio para foto</span>
-        </div>
+        <img class="g-ph" src="Librero.jpg" alt="Librero empotrado fabricado a medida">
         <div class="g-info"><span>A medida</span><h3>Librero empotrado</h3></div>
       </article>
     </div>
