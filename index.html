@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXPERT MOBILARIOS | Diseño, fabricación y montaje de mobiliario a medida</title>
+<meta name="description" content="EXPERT MOBILIARIOS: expertos en diseño, fabricación y montaje de mobiliario a medida. Cocinas, closets, muebles de baño, oficinas y más. Calidad premium, materiales seleccionados e instalación profesional.">
+<meta name="keywords" content="mobiliario a medida, muebles personalizados, cocinas integrales, closets, diseño de interiores, carpintería, fabricación de muebles, montaje de muebles">
+<meta name="author" content="EXPERT MOBILIARIOS">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="EXPERT MOBILIARIOS | Mobiliario a medida">
+<meta property="og:description" content="Transformamos espacios en lugares funcionales y acogedores. Diseño, fabricación y montaje de mobiliario a tu medida.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="Gemini_Generated_Image_1oisff1oisff1ois.jpeg">
+<meta property="og:locale" content="es_LA">
+<meta name="theme-color" content="#0b0c10">
+<link rel="icon" href="Gemini_Generated_Image_1oisff1oisff1ois.jpeg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0c10;
+  --bg-2:#101218;
+  --wood:#c8915a;
+  --wood-2:#e8c193;
+  --wood-3:#8a5a2b;
+  --cream:#f4efe8;
+  --muted:rgba(244,239,232,.62);
+  --line:rgba(200,145,90,.22);
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--cream);
+  font-family:var(--sans);
+  font-weight:300;
+  line-height:1.7;
+  overflow-x:hidden;
+  cursor:none;
+}
+@media (hover:none),(pointer:coarse){ body{cursor:auto} }
+::selection{background:var(--wood);color:var(--bg)}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:400;line-height:1.15}
+section{position:relative;padding:110px 6vw}
+.wrap{max-width:1200px;margin:0 auto;position:relative;z-index:2}
+
+/* ---------- fondo: canvas, blobs, grano ---------- */
+#dust{position:fixed;inset:0;z-index:0;pointer-events:none}
+.blob{position:fixed;border-radius:50%;filter:blur(90px);opacity:.16;z-index:0;pointer-events:none;will-change:transform}
+.blob.b1{width:46vw;height:46vw;left:-12vw;top:-10vw;background:radial-gradient(circle,#c8915a,transparent 70%);animation:drift1 34s ease-in-out infinite alternate}
+.blob.b2{width:38vw;height:38vw;right:-10vw;top:32vh;background:radial-gradient(circle,#8a5a2b,transparent 70%);animation:drift2 42s ease-in-out infinite alternate}
+.blob.b3{width:34vw;height:34vw;left:18vw;bottom:-14vw;background:radial-gradient(circle,#e8c193,transparent 70%);animation:drift3 48s ease-in-out infinite alternate;opacity:.10}
+@keyframes drift1{to{transform:translate(9vw,12vh) scale(1.15)}}
+@keyframes drift2{to{transform:translate(-8vw,-10vh) scale(.9)}}
+@keyframes drift3{to{transform:translate(6vw,-9vh) scale(1.2)}}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ---------- cursor personalizado ---------- */
+.cursor-dot,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:10000;border-radius:50%;transform:translate(-50%,-50%)}
+.cursor-dot{width:6px;height:6px;background:var(--wood-2)}
+.cursor-ring{width:36px;height:36px;border:1px solid rgba(200,145,90,.75);transition:width .3s,height .3s,border-color .3s,background .3s}
+.cursor-ring.grow{width:64px;height:64px;background:rgba(200,145,90,.08);border-color:var(--wood-2)}
+@media (hover:none),(pointer:coarse){.cursor-dot,.cursor-ring{display:none}}
+
+/* ---------- splash ---------- */
+#splash{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;transition:opacity .9s ease,visibility .9s}
+#splash.done{opacity:0;visibility:hidden}
+.splash-logo{width:130px;height:130px;border-radius:50%;object-fit:cover;position:relative;animation:pulse 2s ease-in-out infinite;box-shadow:0 0 0 0 rgba(200,145,90,.55)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(200,145,90,.5)}70%{box-shadow:0 0 0 34px rgba(200,145,90,0)}100%{box-shadow:0 0 0 0 rgba(200,145,90,0)}}
+.splash-name{display:flex;flex-wrap:wrap;justify-content:center;gap:.35em;font-family:var(--serif);font-size:clamp(1.5rem,4.5vw,2.6rem);letter-spacing:.14em}
+.splash-name .ch{display:inline-block;opacity:0;transform:translateY(26px);animation:chUp .7s cubic-bezier(.22,1,.36,1) forwards;animation-delay:var(--d)}
+.splash-name .ch.wood{background:linear-gradient(120deg,var(--wood-2),var(--wood),var(--wood-3));-webkit-background-clip:text;background-clip:text;color:transparent}
+@keyframes chUp{to{opacity:1;transform:translateY(0)}}
+.splash-bar{width:min(280px,60vw);height:2px;background:rgba(244,239,232,.12);overflow:hidden;border-radius:2px}
+.splash-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--wood-3),var(--wood),var(--wood-2));transition:width .1s linear}
+
+/* ---------- header ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:900;padding:20px 6vw;display:flex;align-items:center;justify-content:space-between;transition:background .4s,backdrop-filter .4s,padding .4s,border-color .4s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(11,12,16,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:12px 6vw;border-color:rgba(200,145,90,.14)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+.brand span{font-family:var(--serif);letter-spacing:.12em;font-size:.95rem}
+nav.desktop{display:flex;gap:34px}
+nav.desktop a{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);position:relative;transition:color .3s;padding:6px 0}
+nav.desktop a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--wood);transition:width .35s}
+nav.desktop a:hover,nav.desktop a.active{color:var(--cream)}
+nav.desktop a.active::after,nav.desktop a:hover::after{width:100%}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;z-index:1001}
+.burger i{position:absolute;left:10px;right:10px;height:2px;background:var(--cream);transition:.35s}
+.burger i:nth-child(1){top:16px}.burger i:nth-child(2){top:22px}.burger i:nth-child(3){top:28px}
+.burger.open i:nth-child(1){top:22px;transform:rotate(45deg)}
+.burger.open i:nth-child(2){opacity:0}
+.burger.open i:nth-child(3){top:22px;transform:rotate(-45deg)}
+.mobile-menu{position:fixed;top:0;right:0;bottom:0;width:min(320px,84vw);background:#0e0f14;border-left:1px solid var(--line);z-index:1000;transform:translateX(100%);transition:transform .5s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column;justify-content:center;padding:0 40px;gap:8px}
+.mobile-menu.open{transform:translateX(0)}
+.mobile-menu a{font-family:var(--serif);font-size:1.5rem;padding:12px 0;color:var(--muted);border-bottom:1px solid rgba(244,239,232,.07);transition:color .3s,padding-left .3s}
+.mobile-menu a:hover,.mobile-menu a.active{color:var(--wood-2);padding-left:8px}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:950;opacity:0;visibility:hidden;transition:.4s}
+.scrim.show{opacity:1;visibility:visible}
+
+/* ---------- reveal on scroll ---------- */
+.reveal{opacity:0;transform:translateY(44px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1);transition-delay:var(--rd,0s)}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+/* ---------- marquee ---------- */
+.marquee-band{position:relative;z-index:2;transform:rotate(-2deg);margin:40px -5vw;padding:0;overflow:hidden;background:linear-gradient(100deg,var(--wood-3),var(--wood) 40%,var(--wood-2) 60%,var(--wood));box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.marquee-track{display:flex;width:max-content;animation:marquee 26s linear infinite;padding:16px 0}
+.marquee-track span{white-space:nowrap;font-family:var(--serif);font-size:1.05rem;letter-spacing:.22em;text-transform:uppercase;color:#0b0c10;padding:0 28px;font-weight:600}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* ---------- hero ---------- */
+#inicio{min-height:100vh;display:flex;align-items:center;padding-top:140px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;width:100%}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--wood);margin-bottom:26px}
+.kicker::before{content:'';width:42px;height:1px;background:var(--wood)}
+.hero-title{font-size:clamp(2.4rem,5.6vw,4.4rem);margin-bottom:28px}
+.hero-title .line{display:block;overflow:hidden}
+.hero-title .li{display:block;transform:translateY(110%);transition:transform 1s cubic-bezier(.22,1,.36,1);transition-delay:var(--ld,0s)}
+body.loaded .hero-title .li{transform:translateY(0)}
+.hero-title .gold{background:linear-gradient(110deg,var(--wood-2) 10%,var(--wood) 45%,var(--wood-3) 90%);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.hero-sub{color:var(--muted);max-width:520px;margin-bottom:38px;font-size:1.05rem}
+.hero-cta{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:56px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 34px;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;font-weight:500;border-radius:2px;transition:transform .35s,box-shadow .35s,background .35s,color .35s;min-height:44px}
+.btn:hover{transform:translateY(-3px)}
+.btn-solid{background:linear-gradient(110deg,var(--wood),var(--wood-3));color:#0b0c10;box-shadow:0 12px 34px rgba(200,145,90,.28)}
+.btn-solid:hover{box-shadow:0 18px 44px rgba(200,145,90,.4)}
+.btn-ghost{border:1px solid var(--line);color:var(--cream)}
+.btn-ghost:hover{border-color:var(--wood);background:rgba(200,145,90,.08)}
+.counters{display:flex;gap:52px;flex-wrap:wrap}
+.counter .num{font-family:var(--serif);font-size:clamp(2rem,3.4vw,2.9rem);color:var(--wood-2)}
+.counter .lbl{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+
+/* logo orbital */
+.orbit-wrap{display:flex;justify-content:center;will-change:transform}
+.orbit{position:relative;width:min(380px,72vw);aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+.orbit img{width:64%;height:64%;border-radius:50%;object-fit:cover;box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 90px rgba(200,145,90,.18);position:relative;z-index:2}
+.orbit .ring{position:absolute;inset:0;border-radius:50%;pointer-events:none}
+.ring.r1{border:1px dashed rgba(200,145,90,.4);animation:spin 26s linear infinite}
+.ring.r2{inset:6.5%;background:conic-gradient(from 0deg,transparent 0 70%,var(--wood-2) 82%,transparent 100%);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 1px));mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 1px));animation:spin 14s linear infinite reverse}
+.ring.r3{inset:-7%;border:1px solid rgba(232,193,147,.12);animation:spin 40s linear infinite}
+.ring.r3::after{content:'';position:absolute;top:-4px;left:50%;width:8px;height:8px;border-radius:50%;background:var(--wood-2);box-shadow:0 0 16px var(--wood-2)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.scroll-hint{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);font-size:.68rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:10px}
+.scroll-hint::after{content:'';width:1px;height:44px;background:linear-gradient(var(--wood),transparent);animation:hint 1.8s ease-in-out infinite}
+@keyframes hint{0%,100%{transform:scaleY(.4);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+
+/* ---------- encabezados de sección ---------- */
+.sec-head{margin-bottom:64px;max-width:640px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head.center .kicker{justify-content:center}
+.sec-head.center .kicker::after{content:'';width:42px;height:1px;background:var(--wood)}
+.sec-head h2{font-size:clamp(1.9rem,4vw,3rem)}
+.sec-head p{color:var(--muted);margin-top:16px}
+
+/* ---------- servicios ---------- */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.svc{position:relative;padding:40px 32px;border:1px solid rgba(244,239,232,.08);background:rgba(255,255,255,.02);border-radius:6px;overflow:hidden;transition:transform .45s cubic-bezier(.22,1,.36,1),border-color .45s,box-shadow .45s}
+.svc::before{content:'';position:absolute;inset:0;background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(200,145,90,.16),transparent 55%);opacity:0;transition:opacity .45s;pointer-events:none}
+.svc:hover{transform:translateY(-10px);border-color:rgba(200,145,90,.55);box-shadow:0 26px 60px rgba(0,0,0,.45)}
+.svc:hover::before{opacity:1}
+.svc svg{width:44px;height:44px;stroke:var(--wood);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;margin-bottom:22px}
+.svc h3{font-size:1.35rem;margin-bottom:12px}
+.svc p{color:var(--muted);font-size:.94rem}
+
+/* ---------- por qué elegirnos ---------- */
+#nosotros{background:linear-gradient(180deg,transparent,rgba(200,145,90,.04),transparent)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.why-visual{position:relative;border:1px solid var(--line);border-radius:8px;padding:14px;background:rgba(255,255,255,.02)}
+.why-visual img{border-radius:4px;width:100%;aspect-ratio:1;object-fit:cover}
+.why-visual .tag{position:absolute;bottom:-22px;right:-14px;background:linear-gradient(120deg,var(--wood),var(--wood-3));color:#0b0c10;font-family:var(--serif);padding:18px 26px;font-size:1.05rem;border-radius:4px;box-shadow:0 18px 40px rgba(0,0,0,.5);letter-spacing:.04em}
+.why-list{display:flex;flex-direction:column;gap:26px;margin-top:34px}
+.why-item{display:flex;gap:18px;align-items:flex-start}
+.check{flex:0 0 34px;width:34px;height:34px;border-radius:50%;border:1px solid var(--wood);display:flex;align-items:center;justify-content:center;background:rgba(200,145,90,.08)}
+.check svg{width:15px;height:15px;stroke:var(--wood-2);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.why-item h3{font-size:1.12rem;margin-bottom:4px}
+.why-item p{color:var(--muted);font-size:.92rem}
+
+/* ---------- proceso ---------- */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:34px}
+.step{border-top:1px solid rgba(244,239,232,.1);padding-top:26px;position:relative;transition:border-color .4s}
+.step:hover{border-color:var(--wood)}
+.step .n{font-family:var(--serif);font-size:clamp(3.6rem,7vw,5.4rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(200,145,90,.7);margin-bottom:18px;display:block}
+.step h3{font-size:1.25rem;margin-bottom:10px}
+.step p{color:var(--muted);font-size:.92rem}
+
+/* ---------- galería ---------- */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.g-item{position:relative;aspect-ratio:4/3;border-radius:6px;overflow:hidden;border:1px solid rgba(244,239,232,.08)}
+.g-ph{position:absolute;inset:0;transition:transform .8s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
+.g-item:hover .g-ph{transform:scale(1.12)}
+.g-ph svg{width:54px;height:54px;stroke:rgba(11,12,16,.55);fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.g-ph .ph-tag{font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(11,12,16,.6);border:1px solid rgba(11,12,16,.35);padding:6px 14px;border-radius:20px;background:rgba(244,239,232,.25)}
+.g-info{position:absolute;left:0;right:0;bottom:0;padding:56px 24px 20px;background:linear-gradient(transparent,rgba(5,5,8,.92) 70%);z-index:2}
+.g-info h3{font-size:1.2rem}
+.g-info span{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--wood-2)}
+
+/* ---------- testimonios ---------- */
+#testimonios{background:linear-gradient(180deg,transparent,rgba(200,145,90,.04),transparent)}
+.slider{max-width:760px;margin:0 auto;overflow:hidden}
+.slides{display:flex;transition:transform .7s cubic-bezier(.22,1,.36,1)}
+.slide{flex:0 0 100%;text-align:center;padding:0 20px}
+.stars{display:flex;justify-content:center;gap:6px;margin-bottom:26px}
+.stars svg{width:20px;height:20px;fill:var(--wood)}
+.slide blockquote{font-family:var(--serif);font-size:clamp(1.15rem,2.4vw,1.5rem);line-height:1.5;font-style:italic;color:var(--cream);margin-bottom:26px}
+.slide .who{color:var(--wood-2);font-size:.85rem;letter-spacing:.16em;text-transform:uppercase}
+.slide .role{color:var(--muted);font-size:.78rem;margin-top:4px}
+.dots{display:flex;justify-content:center;gap:12px;margin-top:40px}
+.dot{width:10px;height:10px;border-radius:50%;border:1px solid var(--wood);background:transparent;transition:.3s;cursor:none;padding:0}
+@media (hover:none){.dot{cursor:pointer;width:14px;height:14px}}
+.dot.active,.dot:hover{background:var(--wood)}
+
+/* ---------- contacto ---------- */
+.cta-box{position:relative;max-width:900px;margin:0 auto;border-radius:12px;padding:2px;overflow:hidden;isolation:isolate}
+.cta-box::before{content:'';position:absolute;inset:-60%;background:conic-gradient(from var(--ang,0deg),transparent 0 68%,var(--wood-2) 80%,var(--wood) 88%,transparent 100%);animation:rotate-light 5s linear infinite;z-index:-1}
+@property --ang{syntax:'<angle>';initial-value:0deg;inherits:false}
+@keyframes rotate-light{to{--ang:360deg}}
+.cta-inner{background:#0e0f14;border-radius:10px;padding:clamp(44px,7vw,80px);text-align:center}
+.cta-inner h2{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:16px}
+.cta-inner>p{color:var(--muted);max-width:520px;margin:0 auto 40px}
+.btn-wa{background:linear-gradient(110deg,var(--wood),var(--wood-3));color:#0b0c10;box-shadow:0 14px 40px rgba(200,145,90,.3);font-weight:600}
+.btn-wa svg{width:20px;height:20px;fill:#0b0c10}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px;margin-top:60px;text-align:left}
+.c-item{display:flex;gap:16px;align-items:flex-start;padding:20px;border:1px solid rgba(244,239,232,.08);border-radius:6px;transition:border-color .35s,transform .35s}
+.c-item:hover{border-color:rgba(200,145,90,.5);transform:translateY(-4px)}
+.c-item svg{width:22px;height:22px;stroke:var(--wood);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:0 0 22px;margin-top:3px}
+.c-item b{display:block;font-weight:500;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--wood-2);margin-bottom:4px}
+.c-item span{color:var(--muted);font-size:.92rem;word-break:break-word}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid rgba(200,145,90,.14);padding:64px 6vw 40px;position:relative;z-index:2;background:rgba(8,9,12,.6)}
+.foot-grid{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:44px;justify-content:space-between;align-items:flex-start}
+.foot-brand{display:flex;align-items:center;gap:16px;max-width:380px}
+.foot-brand img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+.foot-brand .nm{font-family:var(--serif);letter-spacing:.14em}
+.foot-brand .sl{color:var(--muted);font-size:.84rem;margin-top:4px}
+.socials{display:flex;gap:14px}
+.socials a{width:46px;height:46px;border-radius:50%;border:1px solid rgba(244,239,232,.16);display:flex;align-items:center;justify-content:center;transition:.35s}
+.socials a:hover{border-color:var(--wood);background:rgba(200,145,90,.1);transform:translateY(-4px)}
+.socials svg{width:18px;height:18px;fill:var(--cream)}
+.copy{max-width:1200px;margin:48px auto 0;padding-top:24px;border-top:1px solid rgba(244,239,232,.07);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;color:var(--muted);font-size:.8rem}
+.floating-wa{position:fixed;right:24px;bottom:24px;z-index:920;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#25d366,#128c7e);box-shadow:0 18px 44px rgba(0,0,0,.38),0 0 0 0 rgba(37,211,102,.42);animation:wa-pulse 2.4s ease-out infinite;transition:transform .3s,box-shadow .3s}
+.floating-wa:hover{transform:translateY(-5px) scale(1.04);box-shadow:0 24px 54px rgba(0,0,0,.48),0 0 0 10px rgba(37,211,102,.08)}
+.floating-wa svg{width:30px;height:30px;fill:#fff}
+@keyframes wa-pulse{70%{box-shadow:0 18px 44px rgba(0,0,0,.38),0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 18px 44px rgba(0,0,0,.38),0 0 0 0 rgba(37,211,102,0)}}
+
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:70px}
+  .orbit-wrap{order:-1}
+  .orbit{width:min(300px,70vw)}
+  .why-grid{grid-template-columns:1fr;gap:60px}
+  nav.desktop{display:none}
+  .burger{display:block}
+  section{padding:88px 6vw}
+  .counters{gap:34px}
+  .scroll-hint{display:none}
+}
+@media (max-width:480px){
+  .hero-cta .btn{width:100%;justify-content:center}
+  .marquee-track span{font-size:.85rem;padding:0 18px}
+  .floating-wa{right:18px;bottom:18px;width:54px;height:54px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== SPLASH ===== -->
+<div id="splash" aria-hidden="true">
+  <img class="splash-logo" src="Gemini_Generated_Image_1oisff1oisff1ois.jpeg" alt="EXPERT MOBILIARIOS">
+  <div class="splash-name" id="splashName"></div>
+  <div class="splash-bar"><i id="splashBar"></i></div>
+</div>
+
+<!-- fondo -->
+<canvas id="dust"></canvas>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="grain"></div>
+
+<!-- cursor -->
+<div class="cursor-dot" id="cDot"></div>
+<div class="cursor-ring" id="cRing"></div>
+
+<!-- ===== HEADER ===== -->
+<header id="header">
+  <a class="brand" href="#inicio">
+    <img src="Gemini_Generated_Image_1oisff1oisff1ois.jpeg" alt="Logo EXPERT MOBILIARIOS">
+    <span>EXPERT MOBILIARIOS</span>
+  </a>
+  <nav class="desktop" id="navDesktop">
+    <a href="#inicio" class="active">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Abrir menú"><i></i><i></i><i></i></button>
+</header>
+<div class="scrim" id="scrim"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="#inicio">Inicio</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#proceso">Proceso</a>
+  <a href="#proyectos">Proyectos</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Mobiliario a medida</span>
+      <h1 class="hero-title">
+        <span class="line"><span class="li" style="--ld:.15s">Transformamos espacios</span></span>
+        <span class="line"><span class="li" style="--ld:.32s">en lugares funcionales</span></span>
+        <span class="line"><span class="li gold" style="--ld:.49s">y acogedores</span></span>
+      </h1>
+      <p class="hero-sub">Diseñamos, fabricamos y montamos mobiliario a tu medida: cocinas, closets, muebles de baño y espacios completos con acabados premium y materiales seleccionados.</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="https://wa.me/573215706462?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20de%20mobiliario%20a%20medida." target="_blank" rel="noopener">Solicitar cotización</a>
+        <a class="btn btn-ghost" href="#proyectos">Ver proyectos</a>
+      </div>
+      <div class="counters">
+        <div class="counter reveal" style="--rd:.1s"><div class="num"><span class="count" data-target="500">0</span>+</div><div class="lbl">Proyectos entregados</div></div>
+        <div class="counter reveal" style="--rd:.25s"><div class="num"><span class="count" data-target="100">0</span>%</div><div class="lbl">A tu medida</div></div>
+        <div class="counter reveal" style="--rd:.4s"><div class="num"><span class="count" data-target="10">0</span>+</div><div class="lbl">Años de experiencia</div></div>
+      </div>
+    </div>
+    <div class="orbit-wrap" id="orbitWrap">
+      <div class="orbit">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="ring r3"></div>
+        <img src="Gemini_Generated_Image_1oisff1oisff1ois.jpeg" alt="EXPERT MOBILIARIOS — mobiliario a medida">
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">Desliza</div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee-band" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack">
+    <span>Diseño personalizado ✦ Fabricación de alta calidad ✦ Instalación profesional ✦ Materiales seleccionados ✦ Soluciones modernas ✦ A tu medida ✦&nbsp;</span>
+    <span>Diseño personalizado ✦ Fabricación de alta calidad ✦ Instalación profesional ✦ Materiales seleccionados ✦ Soluciones modernas ✦ A tu medida ✦&nbsp;</span>
+  </div>
+</div>
+
+<!-- ===== SERVICIOS ===== -->
+<section id="servicios">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Lo que hacemos</span>
+      <h2>Servicios a tu medida</h2>
+      <p>Cada proyecto nace de tus necesidades. Diseñamos y fabricamos piezas únicas que aprovechan cada centímetro de tu espacio.</p>
+    </div>
+    <div class="services-grid">
+      <article class="svc reveal" style="--rd:.05s">
+        <svg viewBox="0 0 24 24"><path d="M3 10h18M3 10v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-9M5 10V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M9 14h.01M15 14h.01M12 4v6"/></svg>
+        <h3>Cocinas</h3>
+        <p>Cocinas integrales funcionales y elegantes, optimizadas para tu rutina diaria con acabados de primera.</p>
+      </article>
+      <article class="svc reveal" style="--rd:.15s">
+        <svg viewBox="0 0 24 24"><path d="M4 3h16v18H4zM12 3v18M8 8h.01M16 8h.01M8 12h.01M16 12h.01"/></svg>
+        <h3>Closets</h3>
+        <p>Closets y vestidores diseñados al milímetro para organizar tu vida con estilo y orden.</p>
+      </article>
+      <article class="svc reveal" style="--rd:.25s">
+        <svg viewBox="0 0 24 24"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-3zM6 12V6a2 2 0 0 1 4 0M18 12V6M12 3v3"/></svg>
+        <h3>Muebles de baño</h3>
+        <p>Muebles de baño resistentes a la humedad, con diseño limpio y almacenamiento inteligente.</p>
+      </article>
+      <article class="svc reveal" style="--rd:.05s">
+        <svg viewBox="0 0 24 24"><path d="M5 11V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3M3 13a2 2 0 0 1 4 0v1h10v-1a2 2 0 0 1 4 0v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3zM6 20v-2M18 20v-2"/></svg>
+        <h3>Salas y entretenimiento</h3>
+        <p>Centros de entretenimiento y muebles de sala que convierten tu espacio en el punto de reunión ideal.</p>
+      </article>
+      <article class="svc reveal" style="--rd:.15s">
+        <svg viewBox="0 0 24 24"><path d="M3 8h18v9H3zM3 17v3M21 17v3M8 8V5h8v3M10 12h4"/></svg>
+        <h3>Oficinas</h3>
+        <p>Escritorios, libreros y estaciones de trabajo ergonómicas para oficinas en casa o corporativos.</p>
+      </article>
+      <article class="svc reveal" style="--rd:.25s">
+        <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 1 3 6.6L9 21.6a2.4 2.4 0 0 1-3.4-3.4l8.7-8.7M13 5l6 6M4 4l2 2"/></svg>
+        <h3>Muebles personalizados</h3>
+        <p>Si lo imaginas, lo fabricamos. Piezas únicas hechas a mano según tus gustos y necesidades.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== POR QUÉ ELEGIRNOS ===== -->
+<section id="nosotros">
+  <div class="wrap why-grid">
+    <div class="why-visual reveal">
+      <img src="Gemini_Generated_Image_1oisff1oisff1ois.jpeg" alt="Taller de EXPERT MOBILIARIOS">
+      <div class="tag">+10 años creando</div>
+    </div>
+    <div>
+      <div class="sec-head reveal" style="margin-bottom:0">
+        <span class="kicker">Por qué elegirnos</span>
+        <h2>Calidad que se siente en cada detalle</h2>
+      </div>
+      <div class="why-list">
+        <div class="why-item reveal" style="--rd:.05s">
+          <span class="check"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+          <div><h3>Diseño personalizado</h3><p>Cada proyecto se diseña desde cero, adaptado a tu espacio, estilo y presupuesto.</p></div>
+        </div>
+        <div class="why-item reveal" style="--rd:.15s">
+          <span class="check"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+          <div><h3>Fabricación de alta calidad</h3><p>Carpintería de precisión con herramientas profesionales y procesos cuidados al detalle.</p></div>
+        </div>
+        <div class="why-item reveal" style="--rd:.25s">
+          <span class="check"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+          <div><h3>Materiales y acabados seleccionados</h3><p>Trabajamos con maderas, melaminas y herrajes de primera para garantizar durabilidad.</p></div>
+        </div>
+        <div class="why-item reveal" style="--rd:.35s">
+          <span class="check"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+          <div><h3>Instalación profesional</h3><p>Montaje limpio, puntual y cuidadoso. Dejamos tu espacio listo para estrenarse.</p></div>
+        </div>
+        <div class="why-item reveal" style="--rd:.45s">
+          <span class="check"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></span>
+          <div><h3>Soluciones funcionales y modernas</h3><p>Diseños actuales que maximizan el espacio y elevan el valor de tu hogar u oficina.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESO ===== -->
+<section id="proceso">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Cómo trabajamos</span>
+      <h2>Nuestro proceso</h2>
+      <p>Un camino claro y transparente, de la primera visita al último tornillo.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal" style="--rd:.05s"><span class="n">01</span><h3>Asesoría y medición</h3><p>Escuchamos tus ideas, visitamos tu espacio y tomamos medidas exactas.</p></div>
+      <div class="step reveal" style="--rd:.15s"><span class="n">02</span><h3>Diseño 3D y propuesta</h3><p>Visualiza tu mueble antes de fabricarlo con renders realistas y cotización clara.</p></div>
+      <div class="step reveal" style="--rd:.25s"><span class="n">03</span><h3>Fabricación</h3><p>Construimos cada pieza en nuestro taller con materiales seleccionados y precisión.</p></div>
+      <div class="step reveal" style="--rd:.35s"><span class="n">04</span><h3>Montaje e instalación</h3><p>Instalamos en tiempo y forma, cuidando cada rincón de tu espacio.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERÍA ===== -->
+<section id="proyectos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Portafolio</span>
+      <h2>Proyectos recientes</h2>
+      <p>Una muestra de lo que podemos crear para ti. Cada espacio, una historia distinta.</p>
+    </div>
+    <div class="gallery-grid">
+      <!-- Para usar fotos reales: reemplaza el div.g-ph por <img class="g-ph" src="tu-foto.jpg" alt="..."> -->
+      <article class="g-item reveal" style="--rd:.05s">
+        <div class="g-ph" style="background:linear-gradient(135deg,#8a5a2b,#c8915a 55%,#e8c193)">
+          <svg viewBox="0 0 24 24"><path d="M3 10h18M3 10v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-9M5 10V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M12 4v6"/></svg>
+          <span class="ph-tag">Espacio para foto</span>
+        </div>
+        <div class="g-info"><span>Cocinas</span><h3>Cocina integral</h3></div>
+      </article>
+      <article class="g-item reveal" style="--rd:.15s">
+        <div class="g-ph" style="background:linear-gradient(160deg,#e8c193,#c8915a 50%,#8a5a2b)">
+          <svg viewBox="0 0 24 24"><path d="M4 3h16v18H4zM12 3v18M8 8h.01M16 8h.01"/></svg>
+          <span class="ph-tag">Espacio para foto</span>
+        </div>
+        <div class="g-info"><span>Closets</span><h3>Walk-in closet</h3></div>
+      </article>
+      <article class="g-item reveal" style="--rd:.25s">
+        <div class="g-ph" style="background:linear-gradient(120deg,#6e4520,#8a5a2b 45%,#c8915a)">
+          <svg viewBox="0 0 24 24"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-3zM6 12V6a2 2 0 0 1 4 0"/></svg>
+          <span class="ph-tag">Espacio para foto</span>
+        </div>
+        <div class="g-info"><span>Baño</span><h3>Mueble de baño</h3></div>
+      </article>
+      <article class="g-item reveal" style="--rd:.05s">
+        <div class="g-ph" style="background:linear-gradient(145deg,#c8915a,#8a5a2b 60%,#5c3a1a)">
+          <svg viewBox="0 0 24 24"><path d="M3 8h18v9H3zM3 17v3M21 17v3M8 8V5h8v3"/></svg>
+          <span class="ph-tag">Espacio para foto</span>
+        </div>
+        <div class="g-info"><span>Oficina</span><h3>Oficina en casa</h3></div>
+      </article>
+      <article class="g-item reveal" style="--rd:.15s">
+        <div class="g-ph" style="background:linear-gradient(170deg,#e8c193,#b07a44 55%,#8a5a2b)">
+          <svg viewBox="0 0 24 24"><path d="M3 5h18v11H3zM8 20h8M12 16v4"/></svg>
+          <span class="ph-tag">Espacio para foto</span>
+        </div>
+        <div class="g-info"><span>Sala</span><h3>Centro de entretenimiento</h3></div>
+      </article>
+      <article class="g-item reveal" style="--rd:.25s">
+        <div class="g-ph" style="background:linear-gradient(110deg,#8a5a2b,#c8915a 40%,#9c6a35 80%)">
+          <svg viewBox="0 0 24 24"><path d="M4 3h16v18H4zM4 9h16M4 15h16M9 3v18"/></svg>
+          <span class="ph-tag">Espacio para foto</span>
+        </div>
+        <div class="g-info"><span>A medida</span><h3>Librero empotrado</h3></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIOS ===== -->
+<section id="testimonios">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="kicker">Testimonios</span>
+      <h2>Lo que dicen nuestros clientes</h2>
+    </div>
+    <div class="slider reveal" id="slider">
+      <div class="slides" id="slides">
+        <div class="slide">
+          <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+          <blockquote>“La cocina quedó exactamente como la soñamos. Cuidaron cada detalle y la instalación fue impecable y puntual.”</blockquote>
+          <div class="who">Mariana G.</div><div class="role">Cocina integral</div>
+        </div>
+        <div class="slide">
+          <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+          <blockquote>“Mi walk-in closet aprovechó hasta el último centímetro. El diseño 3D me ayudó a decidir con total confianza.”</blockquote>
+          <div class="who">Carlos R.</div><div class="role">Walk-in closet</div>
+        </div>
+        <div class="slide">
+          <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
+          <blockquote>“Equiparon toda nuestra oficina con muebles a medida. Profesionales de principio a fin, los recomiendo ampliamente.”</blockquote>
+          <div class="who">Fernanda L.</div><div class="role">Oficina corporativa</div>
+        </div>
+      </div>
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section id="contacto">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <div class="cta-inner">
+        <span class="kicker" style="justify-content:center">Hablemos de tu proyecto</span>
+        <h2>¿Listo para transformar tu espacio?</h2>
+        <p>Cuéntanos tu idea y recibe una cotización sin compromiso. Respondemos el mismo día.</p>
+        <a class="btn btn-wa" href="https://wa.me/573215706462?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20de%20mobiliario%20a%20medida." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.6-1.3.1-.2 0-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3 1 2.6 1.1 2.8.1.2 1.9 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg>
+          Escríbenos por WhatsApp
+        </a>
+        <div class="contact-grid">
+          <div class="c-item">
+            <svg viewBox="0 0 24 24"><path d="M4 6l8 6 8-6M4 6h16v12H4z"/></svg>
+            <div><b>Correo</b><span>contacto@expertmobiliarios.com</span></div>
+          </div>
+          <div class="c-item">
+            <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            <div><b>WhatsApp</b><span>+57 321 570 6462</span></div>
+          </div>
+          <div class="c-item">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-5.6-7-11a7 7 0 0 1 14 0c0 5.4-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <div><b>Ubicación</b><span>Colombia · Servicio a domicilio</span></div>
+          </div>
+          <div class="c-item">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v9h4v-9h3l1-4h-4V6a1 1 0 0 1 1-1h2z"/></svg>
+            <div><b>Redes</b><span>Instagram · Facebook · WhatsApp</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <img src="Gemini_Generated_Image_1oisff1oisff1ois.jpeg" alt="Logo EXPERT MOBILIARIOS">
+      <div>
+        <div class="nm">EXPERT MOBILIARIOS</div>
+        <div class="sl">Expertos en diseño, fabricación y montaje a tu medida.</div>
+      </div>
+    </div>
+    <div class="socials">
+      <a href="https://www.facebook.com/profile.php?id=61590926265773" target="_blank" rel="noopener" aria-label="Facebook de Expert Mobiliarios"><svg viewBox="0 0 24 24"><path d="M14 8h3V5h-3a4 4 0 0 0-4 4v2H7v3h3v7h3v-7h3l1-3h-4V9a1 1 0 0 1 1-1z"/></svg></a>
+      <a href="https://www.instagram.com/expertmobiliarios/" target="_blank" rel="noopener" aria-label="Instagram de Expert Mobiliarios"><svg viewBox="0 0 24 24"><path d="M12 8.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5zm0 5.2a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zM17.5 2h-11A4.5 4.5 0 0 0 2 6.5v11A4.5 4.5 0 0 0 6.5 22h11a4.5 4.5 0 0 0 4.5-4.5v-11A4.5 4.5 0 0 0 17.5 2zm2.7 15.5a2.7 2.7 0 0 1-2.7 2.7h-11a2.7 2.7 0 0 1-2.7-2.7v-11a2.7 2.7 0 0 1 2.7-2.7h11a2.7 2.7 0 0 1 2.7 2.7zM17.8 5.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg></a>
+      <a href="https://wa.me/573215706462?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20de%20mobiliario%20a%20medida." target="_blank" rel="noopener" aria-label="WhatsApp de Expert Mobiliarios"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.6-1.3.1-.2 0-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3 1 2.6 1.1 2.8.1.2 1.9 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg></a>
+    </div>
+  </div>
+  <div class="copy">
+    <span>© 2026 EXPERT MOBILIARIOS. Todos los derechos reservados.</span>
+    <span>Hecho a mano, a tu medida.</span>
+  </div>
+</footer>
+
+<a class="floating-wa" href="https://wa.me/573215706462?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20de%20mobiliario%20a%20medida." target="_blank" rel="noopener" aria-label="Escribir a Expert Mobiliarios por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.6-1.3.1-.2 0-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3 1 2.6 1.1 2.8.1.2 1.9 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+(function(){
+'use strict';
+const isTouch = matchMedia('(hover:none),(pointer:coarse)').matches;
+const reduced = matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+/* ===== SPLASH ===== */
+const splash = document.getElementById('splash');
+const nameEl = document.getElementById('splashName');
+const bar = document.getElementById('splashBar');
+'EXPERT MOBILIARIOS'.split('').forEach((ch,i)=>{
+  const s=document.createElement('span');
+  s.className='ch'+(i>6?' wood':'');
+  s.style.setProperty('--d',(0.15+i*0.055)+'s');
+  s.innerHTML= ch===' ' ? '&nbsp;' : ch;
+  nameEl.appendChild(s);
+});
+let p=0;
+const fill=setInterval(()=>{
+  p=Math.min(100,p+Math.random()*9+4);
+  bar.style.width=p+'%';
+  if(p>=100){
+    clearInterval(fill);
+    setTimeout(()=>{
+      splash.classList.add('done');
+      document.body.classList.add('loaded');
+      setTimeout(()=>splash.remove(),1000);
+    },350);
+  }
+},90);
+
+/* ===== CURSOR PERSONALIZADO ===== */
+if(!isTouch){
+  const dot=document.getElementById('cDot'), ring=document.getElementById('cRing');
+  let mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my;
+  addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+  (function loopCursor(){
+    rx+=(mx-rx)*0.14; ry+=(my-ry)*0.14;
+    ring.style.left=rx+'px'; ring.style.top=ry+'px';
+    requestAnimationFrame(loopCursor);
+  })();
+  const hoverSel='a,button,.svc,.g-item,.c-item,.dot,.why-item,.step';
+  document.addEventListener('mouseover',e=>{ if(e.target.closest(hoverSel)) ring.classList.add('grow'); });
+  document.addEventListener('mouseout',e=>{ if(e.target.closest(hoverSel)) ring.classList.remove('grow'); });
+}else{
+  document.getElementById('cDot').remove();
+  document.getElementById('cRing').remove();
+}
+
+/* ===== PARTÍCULAS (virutas de madera doradas) ===== */
+const cv=document.getElementById('dust'), ctx=cv.getContext('2d');
+let W,H,parts=[];
+function resize(){ W=cv.width=innerWidth; H=cv.height=innerHeight; }
+addEventListener('resize',resize); resize();
+const N = reduced ? 0 : Math.min(70, Math.floor(innerWidth/18));
+for(let i=0;i<N;i++){
+  parts.push({
+    x:Math.random()*W, y:Math.random()*H,
+    len:4+Math.random()*10, w:1+Math.random()*1.6,
+    a:Math.random()*Math.PI*2, spin:(Math.random()-.5)*0.012,
+    vx:(Math.random()-.5)*0.25, vy:-(0.12+Math.random()*0.35),
+    o:0.15+Math.random()*0.4,
+    hue: Math.random()<.5 ? '200,145,90' : '232,193,147'
+  });
+}
+function drawParts(){
+  ctx.clearRect(0,0,W,H);
+  for(const s of parts){
+    s.x+=s.vx+Math.sin(s.y*0.01)*0.15; s.y+=s.vy; s.a+=s.spin;
+    if(s.y<-20){s.y=H+20;s.x=Math.random()*W;}
+    if(s.x<-20)s.x=W+20; if(s.x>W+20)s.x=-20;
+    ctx.save();
+    ctx.translate(s.x,s.y); ctx.rotate(s.a);
+    ctx.strokeStyle='rgba('+s.hue+','+s.o+')';
+    ctx.lineWidth=s.w; ctx.lineCap='round';
+    ctx.beginPath(); ctx.moveTo(-s.len/2,0); ctx.quadraticCurveTo(0,s.len*0.25,s.len/2,0); ctx.stroke();
+    ctx.restore();
+  }
+  requestAnimationFrame(drawParts);
+}
+if(N) drawParts();
+
+/* ===== HEADER + MENÚ MÓVIL ===== */
+const header=document.getElementById('header');
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>40),{passive:true});
+const burger=document.getElementById('burger'), mMenu=document.getElementById('mobileMenu'), scrim=document.getElementById('scrim');
+function toggleMenu(open){
+  burger.classList.toggle('open',open); mMenu.classList.toggle('open',open); scrim.classList.toggle('show',open);
+  document.body.style.overflow=open?'hidden':'';
+}
+burger.addEventListener('click',()=>toggleMenu(!mMenu.classList.contains('open')));
+scrim.addEventListener('click',()=>toggleMenu(false));
+mMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>toggleMenu(false)));
+
+/* ===== ENLACE ACTIVO SEGÚN SECCIÓN ===== */
+const navLinks=[...document.querySelectorAll('#navDesktop a, #mobileMenu a')];
+const secs=[...document.querySelectorAll('section[id]')];
+const spy=new IntersectionObserver(entries=>{
+  entries.forEach(en=>{
+    if(en.isIntersecting){
+      navLinks.forEach(a=>a.classList.toggle('active', a.getAttribute('href')==='#'+en.target.id));
+    }
+  });
+},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>spy.observe(s));
+
+/* ===== REVEAL ESCALONADO ===== */
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+},{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ===== CONTADORES ===== */
+const cio=new IntersectionObserver(entries=>{
+  entries.forEach(en=>{
+    if(!en.isIntersecting) return;
+    cio.unobserve(en.target);
+    const el=en.target, target=+el.dataset.target, dur=1800, t0=performance.now();
+    (function tick(t){
+      const k=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-k,3);
+      el.textContent=Math.round(target*e);
+      if(k<1) requestAnimationFrame(tick);
+    })(t0);
+  });
+},{threshold:0.6});
+document.querySelectorAll('.count').forEach(el=>cio.observe(el));
+
+/* ===== PARALLAX DEL LOGO ORBITAL ===== */
+const hero=document.getElementById('inicio'), orbitWrap=document.getElementById('orbitWrap');
+if(!isTouch && !reduced){
+  let tx=0,ty=0,px=0,py=0;
+  hero.addEventListener('mousemove',e=>{
+    const r=hero.getBoundingClientRect();
+    tx=((e.clientX-r.left)/r.width-0.5)*26;
+    ty=((e.clientY-r.top)/r.height-0.5)*26;
+  });
+  hero.addEventListener('mouseleave',()=>{tx=0;ty=0;});
+  (function loopPar(){
+    px+=(tx-px)*0.06; py+=(ty-py)*0.06;
+    orbitWrap.style.transform='translate('+px+'px,'+py+'px)';
+    requestAnimationFrame(loopPar);
+  })();
+}
+
+/* ===== GLOW RADIAL EN TARJETAS ===== */
+document.querySelectorAll('.svc').forEach(card=>{
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect();
+    card.style.setProperty('--mx',(e.clientX-r.left)+'px');
+    card.style.setProperty('--my',(e.clientY-r.top)+'px');
+  });
+});
+
+/* ===== SLIDER DE TESTIMONIOS ===== */
+const slidesEl=document.getElementById('slides'), dotsEl=document.getElementById('dots');
+const total=slidesEl.children.length; let idx=0, timer;
+for(let i=0;i<total;i++){
+  const d=document.createElement('button');
+  d.className='dot'+(i===0?' active':'');
+  d.setAttribute('aria-label','Testimonio '+(i+1));
+  d.addEventListener('click',()=>{go(i); restart();});
+  dotsEl.appendChild(d);
+}
+function go(i){
+  idx=(i+total)%total;
+  slidesEl.style.transform='translateX(-'+(idx*100)+'%)';
+  dotsEl.querySelectorAll('.dot').forEach((d,k)=>d.classList.toggle('active',k===idx));
+}
+function restart(){ clearInterval(timer); timer=setInterval(()=>go(idx+1),5000); }
+document.getElementById('slider').addEventListener('mouseenter',()=>clearInterval(timer));
+document.getElementById('slider').addEventListener('mouseleave',restart);
+restart();
+})();
+</script>
+</body>
+</html>
